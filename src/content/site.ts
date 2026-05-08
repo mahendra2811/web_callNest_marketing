@@ -8,12 +8,12 @@ export const SITE = {
   minAndroid: "8.0",
   apkPath: "/apk/callnest-latest.apk",
   emails: {
-    support: "support@pooniya.com",
-    bugs: "bugs@pooniya.com",
-    feedback: "feedback@pooniya.com",
+    support: "mahendrapuniya92@gmail.com",
+    bugs: "mahendrapuniya92@gmail.com",
+    feedback: "mahendrapuniya92@gmail.com",
   },
   social: {
-    whatsapp: "https://wa.me/91XXXXXXXXXX",
+    whatsapp: "https://wa.me/91234567890",
   },
   ga4Id: process.env.NEXT_PUBLIC_GA4_ID ?? "",
 } as const;

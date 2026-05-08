@@ -48,3 +48,7 @@ Thumbs.db
 # logs
 logs
 *.log
+
+# claude code (keep shared settings + commands, ignore personal)
+.claude/settings.local.json
+.claude/.credentials.json
