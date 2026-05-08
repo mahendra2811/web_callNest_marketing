@@ -22,24 +22,21 @@ export default function DownloadPage() {
           Download {SITE.name}
         </h1>
         <p className="mt-2 max-w-2xl text-ink-600">
-          Sideloaded for Android. Signed APK with a published SHA-256
-          checksum. Free, no ads.
+          Sideloaded for Android. Signed APK with a published SHA-256 checksum. Free, no ads.
         </p>
 
         <Card className="mt-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <div className="text-xs uppercase tracking-wider text-ink-600">
-                Latest version
-              </div>
+              <div className="text-xs uppercase tracking-wider text-ink-600">Latest version</div>
               <div className="mt-1 text-2xl font-bold">v{latest.version}</div>
               <div className="mt-1 text-sm text-ink-600">
-                Released {latest.date} · {latest.size} · Android{" "}
-                {SITE.minAndroid}+
+                {/* Released {latest.date} · */}
+                {latest.size} · Android {SITE.minAndroid}+
               </div>
-              <div className="mt-2 break-all text-xs text-ink-600">
+              {/* <div className="mt-2 break-all text-xs text-ink-600">
                 SHA-256: <span className="font-mono">{latest.sha256}</span>
-              </div>
+              </div> */}
             </div>
             <LinkButton href={latest.downloadUrl}>
               <Download className="h-4 w-4" /> Download APK
@@ -49,9 +46,7 @@ export default function DownloadPage() {
       </Section>
 
       <Section>
-        <h2 className="headline font-display text-2xl font-bold">
-          How to install
-        </h2>
+        <h2 className="headline font-display text-2xl font-bold">How to install</h2>
         <ol className="mt-6 grid gap-4 sm:grid-cols-3">
           {[
             {
@@ -80,15 +75,11 @@ export default function DownloadPage() {
             </li>
           ))}
         </ol>
-        <p className="mt-4 text-xs text-ink-600">
-          Requires Android {SITE.minAndroid} or later.
-        </p>
+        <p className="mt-4 text-xs text-ink-600">Requires Android {SITE.minAndroid} or later.</p>
       </Section>
 
       <Section>
-        <h2 className="headline font-display text-2xl font-bold">
-          Older versions
-        </h2>
+        <h2 className="headline font-display text-2xl font-bold">Older versions</h2>
         {older.length === 0 ? (
           <p className="mt-2 text-sm text-ink-600">
             No older versions yet. Check back after the next release.
@@ -111,14 +102,9 @@ export default function DownloadPage() {
                     <td className="px-4 py-3 font-medium">v{r.version}</td>
                     <td className="px-4 py-3 text-ink-600">{r.date}</td>
                     <td className="px-4 py-3 text-ink-600">{r.size}</td>
-                    <td className="px-4 py-3 font-mono text-xs text-ink-600">
-                      {r.sha256}
-                    </td>
+                    <td className="px-4 py-3 font-mono text-xs text-ink-600">{r.sha256}</td>
                     <td className="px-4 py-3">
-                      <a
-                        className="text-brand-500 hover:text-brand-600"
-                        href={r.downloadUrl}
-                      >
+                      <a className="text-brand-500 hover:text-brand-600" href={r.downloadUrl}>
                         Download
                       </a>
                     </td>
