@@ -29,16 +29,61 @@ public/
   assets/{logo,screenshots,icons}
 scripts/
   gen-assets.mjs      Regenerate favicons, OG image, screenshot placeholders
+  sync-release.mjs    Pull latest signed APK from ~/Releases/ and update
+                      public/apk/, public/versions-stable.json, releases.ts
 ```
 
 ## Commands
 
 ```bash
-npm run dev         # local dev server
-npm run build       # static export to ./out
-npm run lint        # next lint
-npm run typecheck   # tsc --noEmit
+npm run dev          # local dev server
+npm run build        # static export to ./out
+npm run lint         # next lint
+npm run typecheck    # tsc --noEmit
+npm run sync-release # copy ~/Releases/CallNest-*.apk → public/apk + patch metadata
+npm run release      # sync-release + build (one-shot before deploy)
 node scripts/gen-assets.mjs   # regen favicons / OG / screenshot placeholders
+```
+
+## Release workflow (every Android release)
+
+This repo and the Android repo at `/home/primathon/Documents/p_projet/a_APP/4. callVault`
+are linked by the local filesystem — `~/Releases/` is the handoff folder.
+
+```bash
+# 1. In the Android repo, build the signed APK
+cd /home/primathon/Documents/p_projet/a_APP/4. callVault
+./scripts/release.sh                   # current version
+# OR:
+./scripts/release.sh --bump-patch      # 1.0.0 → 1.0.1, versionCode++
+
+# 2. Back in this web repo, pull the artifact in
+cd /home/primathon/Documents/p_projet/a_web/callNest-web
+npm run sync-release
+# This copies CallNest-<ver>.apk → public/apk/callnest-latest.apk,
+# rewrites public/versions-stable.json with the public URL,
+# and patches src/content/releases.ts (size, sha256, date).
+
+# 3. Commit + push (Cloudflare Pages auto-deploys)
+git add public/apk/callnest-latest.apk public/versions-stable.json src/content/releases.ts
+git commit -m "release: callNest v<ver> (sha256 <hash8>…)"
+git push
+```
+
+### Adding a new version entry
+
+`sync-release.mjs` only patches the entry in `releases.ts` whose `version`
+matches the APK's `versionName`. **Before bumping the Android version, prepend
+a new entry** to `RELEASES` in `src/content/releases.ts` with placeholder
+`size`/`sha256`/`date` and a real `added`/`changed`/`fixed` list. Then run
+`npm run sync-release` to fill in the metadata.
+
+### Override the release source
+
+```bash
+CALLNEST_RELEASES_DIR=/some/other/path npm run sync-release
+# or
+npm run sync-release -- --apk /tmp/CallNest-1.2.3.apk
 ```
 
 ## Conventions
