@@ -14,7 +14,7 @@ export const RELEASES: Release[] = [
     version: "1.0.0",
     date: "2026-05-08",
     size: "21 MB",
-    sha256: "7bf3eb60b72b91fd8699d901ce96b045dace7efd05fec5e649830f3317032cf3",
+    sha256: "a7094ad853473cd2073599b92b34be207af57d81aa207125a0dfab1e2dcd4c1d",
     added: [
       "Auto-capture every call",
       "Auto-save unknown numbers",

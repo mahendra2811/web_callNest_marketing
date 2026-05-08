@@ -3,7 +3,7 @@
   "versionName": "1.0.0",
   "url": "https://callnest.pooniya.com/apk/callnest-latest.apk",
   "size": 22337523,
-  "sha256": "7bf3eb60b72b91fd8699d901ce96b045dace7efd05fec5e649830f3317032cf3",
+  "sha256": "a7094ad853473cd2073599b92b34be207af57d81aa207125a0dfab1e2dcd4c1d",
   "minSdk": 26,
   "minSupportedVersionCode": 1,
   "releaseNotes": "First public release of Call Nest. Capture every inquiry call, auto-save unknown numbers, score leads, tag and follow up — all on-device. Optional encrypted Drive backup. Hindi + English."
