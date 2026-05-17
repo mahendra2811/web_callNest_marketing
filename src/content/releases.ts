@@ -11,6 +11,29 @@ export type Release = {
 
 export const RELEASES: Release[] = [
   {
+    version: "1.0.2",
+    date: "2026-05-17",
+    size: "21.3 MB",
+    sha256: "591674d166ef2c498c499dd4b503dd8846cb8b0dc221ee775bdb70070b75c35f",
+    added: [
+      "Auto-save SIM filter — 3-way segmented selector: Both / SIM 1 / SIM 2 (default Both)",
+      "Call detail: WhatsApp + WhatsApp Business as two distinct icons with W / WB labels",
+      "WhatsApp Business custom icon with the signature '+' mark, matching the official logo",
+      "Stats: Peak hour callout card (your busiest 1-hour window)",
+      "Stats: Saved vs Unsaved horizontal stacked bar with percentages",
+      "Stats: Quick-stats 2×2 grid (total talk time, avg duration, missed rate, unsaved rate)",
+    ],
+    changed: [
+      "Pull-to-refresh polish — separate isRefreshing flag on Stats and Insights so content doesn't jump on cold start or range changes",
+      "Filter chip text now properly vertically centered (was riding high)",
+      "WhatsApp deep links force-route through the correct package (com.whatsapp / com.whatsapp.w4b) — users with both apps land in the intended inbox",
+    ],
+    fixed: [
+      "Filter chip vertical alignment — chip box now fills the surface and text aligns to centre",
+    ],
+    downloadUrl: "/apk/callnest-latest.apk",
+  },
+  {
     version: "1.0.1",
     date: "2026-05-14",
     size: "21.3 MB",
