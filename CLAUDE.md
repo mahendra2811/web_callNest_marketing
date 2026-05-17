@@ -45,6 +45,18 @@ npm run release      # sync-release + build (one-shot before deploy)
 node scripts/gen-assets.mjs   # regen favicons / OG / screenshot placeholders
 ```
 
+## Release flow
+
+**Source-of-truth docs** — read these first instead of inferring the flow:
+
+- `RELEASE-CHECKLIST.md` (this repo) — web-side release steps (the parts that touch this repo)
+- `TESTER-DISTRIBUTION.md` (this repo) — where every artefact lives + the **WhatsApp broadcast template** to send testers
+- `/home/primathon/Documents/p_projet/a_APP/4. callVault/RELEASE-CHECKLIST.md` — full end-to-end procedure starting from the Android build
+
+For each release: sign + build APK in the Android repo, `npm run sync-release` here,
+prepend an entry to `src/content/releases.ts`, commit + push both repos, paste the
+WhatsApp template from `TESTER-DISTRIBUTION.md` § 2 into your broadcast list.
+
 ## Release workflow (every Android release)
 
 This repo and the Android repo at `/home/primathon/Documents/p_projet/a_APP/4. callVault`
