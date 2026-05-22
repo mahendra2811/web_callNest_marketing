@@ -11,6 +11,20 @@ export type Release = {
 
 export const RELEASES: Release[] = [
   {
+    version: "1.0.5",
+    date: "2026-05-22",
+    size: "21.3 MB",
+    sha256: "884f961038c03107e14d515a109d40d09b0f5ed5aec1642a67e3b9d9bec14c81",
+    added: [
+      "Carrier caller-ID name capture — a new CallScreeningService records the carrier-supplied name during the ring; unsaved Calls rows now show it with a subtle 'Caller ID' chip",
+      "Saved inquiries use the caller-ID name as the contact's first name — OS Contacts shows 'Rahul callNest-s1 +91… callNest' instead of just 'callNest-s1 +91… callNest'",
+      "New Settings → Privacy toggle: 'Capture carrier caller-ID names' (OFF by default). Turning it on requests the system Call-Screening role.",
+    ],
+    changed: [],
+    fixed: [],
+    downloadUrl: "/apk/callnest-latest.apk",
+  },
+  {
     version: "1.0.4",
     date: "2026-05-21",
     size: "21.3 MB",
