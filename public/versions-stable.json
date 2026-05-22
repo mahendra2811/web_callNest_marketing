@@ -1,10 +1,10 @@
 {
-  "versionCode": 7,
-  "versionName": "1.0.5",
+  "versionCode": 8,
+  "versionName": "1.0.6",
   "url": "https://callnest.pooniya.com/apk/callnest-latest.apk",
-  "size": 22344947,
-  "sha256": "884f961038c03107e14d515a109d40d09b0f5ed5aec1642a67e3b9d9bec14c81",
+  "size": 22185315,
+  "sha256": "5922f005c948f92f0ea8090f1e785917fa80db4e51f1b75986c0c63075ecdaf8",
   "minSdk": 26,
   "minSupportedVersionCode": 1,
-  "releaseNotes": "## [1.0.5] — Tester drop (2026-05-22)  **Build artefacts** - `CallNest-1.0.5.apk` — 21 MB - SHA-256: `884f961038c03107e14d515a109d40d09b0f5ed5aec1642a67e3b9d9bec14c81` - versionCode 7  ### Added - Capture and display carrier caller-ID names for unsaved numbers — a new `CallScreeningService` records the carrier-supplied name during the ring, and unsaved Calls rows surface it with a subtle \\\"Caller ID\\\" chip. - Save inquiries with the caller-ID name as the contact's first name — the existing `callNest-s1 +91… callNest` format becomes the last name, so the OS Contacts app shows `Rahul callNest-s1 +91… callNest` for an unknown \\\"Rahul\\\". - Added optional **Capture carrier caller-ID names** toggle in Settings → Privacy; OFF by default. Turning it on requests the system Call-Screening role; the capture is still best-effort on devices that route screening without the role."
+  "releaseNotes": "## [1.0.6] — Tester drop (2026-05-22)  ### Fixed - Launcher icon now uses the app's warm canvas background (`#F5F1EA`) instead of a white/blocky fill — logo is properly centered with safe-zone padding so it renders cleanly in circular, rounded-square, and square launcher shapes on all Android versions.  "
 }
