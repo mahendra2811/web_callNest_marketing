@@ -1,10 +1,10 @@
 {
-  "versionCode": 9,
-  "versionName": "1.0.7",
+  "versionCode": 10,
+  "versionName": "1.0.8",
   "url": "https://callnest.pooniya.com/apk/callnest-latest.apk",
   "size": 17341032,
-  "sha256": "7f82b5c42344fa5f7e4c4ed2394b32365debacd16b23a1b6f3b0110719085689",
+  "sha256": "fa8aa3549d9069ac79a25fdedb61f5812357737615618bb0d2e9b2442e0be800",
   "minSdk": 26,
   "minSupportedVersionCode": 1,
-  "releaseNotes": "## [1.0.6] — Tester drop (2026-05-22)  ### Fixed - Launcher icon now uses the app's warm canvas background (`#F5F1EA`) instead of a white/blocky fill — logo is properly centered with safe-zone padding so it renders cleanly in circular, rounded-square, and square launcher shapes on all Android versions.  "
+  "releaseNotes": "## [1.0.7] — Tester drop (2026-05-27)  "
 }
