@@ -11,6 +11,16 @@ export type Release = {
 
 export const RELEASES: Release[] = [
   {
+    version: "1.0.10",
+    date: "2026-05-27",
+    size: "16.6 MB",
+    sha256: "cd412fada35f142be9271cb72adc6cc18938776ec03253843bece4b501bad960",
+    added: [],
+    changed: [],
+    fixed: [],
+    downloadUrl: "/apk/callnest-latest.apk",
+  },
+  {
     version: "1.0.9",
     date: "2026-05-27",
     size: "16.6 MB",
