@@ -1,10 +1,10 @@
 {
-  "versionCode": 14,
-  "versionName": "1.0.12",
+  "versionCode": 15,
+  "versionName": "1.0.13",
   "url": "https://callnest.pooniya.com/apk/callnest-latest.apk",
   "size": 17341444,
-  "sha256": "fac2c94c91c2dd12f1e19e5bcba7b3d4e23d5c3a4b3a109c70bf04cbef1b8301",
+  "sha256": "3e3a4bda532a5f4c0f6cd6a86d79e5f08f139f784bfdbca72e7531b57798193f",
   "minSdk": 26,
   "minSupportedVersionCode": 1,
-  "releaseNotes": "## [1.0.11] — Tester drop (2026-05-27)  "
+  "releaseNotes": "## [1.0.12] — Tester drop (2026-05-27)  "
 }
