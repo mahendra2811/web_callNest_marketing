@@ -66,7 +66,7 @@ gh repo create callnest-web --public --source=. --push    # if you use gh CLI
 ## APK build (in the Android repo)
 
 ```bash
-cd /home/primathon/Documents/p_projet/a_APP/4. callVault
+cd /home/primathon/Documents/p_projet/a_APP/4. callNest
 ./scripts/release.sh                # builds current versionName
 # ./scripts/release.sh --bump-patch  # 1.0.0 → 1.0.1
 ```

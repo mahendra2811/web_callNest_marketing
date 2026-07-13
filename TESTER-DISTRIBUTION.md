@@ -6,6 +6,48 @@ testers, and the exact WhatsApp template to use.** Companion doc to
 
 ---
 
+## 0. ⚠️ One-time notice — the NEXT release breaks in-place update
+
+The original release-signing keystore was lost during the primathon → pooniya
+machine migration (confirmed unrecoverable — see `DECISIONS.md` in the Android
+repo, "2026-07-12 — Release keystore lost..."). A new keystore has been
+generated. **The next version you ship will be signed with a different key
+than every previous release**, so Android will refuse to install it over an
+existing install (`INSTALL_FAILED_UPDATE_INCOMPATIBLE` / "App not installed").
+
+Every tester who already has callNest installed must:
+1. **Export their data first** — Export screen (Excel/CSV/PDF) or Backup, from
+   inside the app they currently have.
+2. **Uninstall** the current callNest.
+3. Install the new build from the usual link.
+
+Use this WhatsApp template instead of the normal one (§2) for that specific
+release only:
+
+```
+📱 *Call Nest v<VERSION> is ready — one-time reinstall needed*
+
+⚠️ This update needs a fresh install (not a tap-to-update) due to a
+one-time security-key change on my end — nothing you did wrong.
+
+*Before you update, please:*
+1. Open callNest → Export or Backup your data (Excel/CSV/PDF)
+2. Uninstall the current callNest app
+3. Install the new one here: https://callnest.pooniya.com/download
+
+*New in this build:*
+• <highlight 1>
+• <highlight 2>
+
+Sorry for the extra step this one time — every update after this will be
+the normal one-tap install again. Ping me if anything looks off. 🙏
+```
+
+Delete this section once that transition release has been sent — every
+release after it goes back to the normal one-tap update flow in §2 below.
+
+---
+
 ## 1. Where every artefact lives (per release)
 
 After running `./scripts/release.sh` in the Android repo and
@@ -114,8 +156,10 @@ needs **"Allow install from this source"** enabled. Android prompts
 once; tester taps Allow; remembered forever for that source app.
 
 Tell each brand-new tester this. After the first install, every
-subsequent version is a one-tap "Update" with no permission re-grant
-because the keystore signature matches.
+subsequent version is normally a one-tap "Update" with no permission
+re-grant, because the keystore signature matches — except the one
+transition release covered in §0 above, where the signature deliberately
+changes and a manual uninstall/reinstall is required.
 
 ### Optional: 30-second screen recording
 
@@ -149,7 +193,7 @@ This file is referenced from:
 
 - `/home/primathon/Documents/p_projet/a_web/callNest-web/CLAUDE.md` →
   "## Release flow" section
-- `/home/primathon/Documents/p_projet/a_APP/4. callVault/CLAUDE.md` →
+- `/home/primathon/Documents/p_projet/a_APP/4. callNest/CLAUDE.md` →
   "## Tester distribution" section
 
 If a future Claude session needs to ship a release or talk to testers,

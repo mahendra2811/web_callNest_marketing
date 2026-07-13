@@ -148,8 +148,8 @@ Branded, with a "Back to home" CTA and a small joke about a missed call.
 - Create folder: `public/assets/`
 - Inside it, create: `logo/`, `screenshots/`, `icons/`, `apk/`.
 - **Copy the app logo** from this absolute path into `public/assets/logo/`:
-  - Source: `/home/primathon/Documents/p_projet/a_APP/4. callVault/app/src/main/res/drawable/ic_callnest_logo.png` → save as `public/assets/logo/callnest-logo.png`
-  - Also copy `/home/primathon/Documents/p_projet/a_APP/4. callVault/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png` → `public/assets/logo/callnest-mark.png`
+  - Source: `/home/primathon/Documents/p_projet/a_APP/4. callNest/app/src/main/res/drawable/ic_callnest_logo.png` → save as `public/assets/logo/callnest-logo.png`
+  - Also copy `/home/primathon/Documents/p_projet/a_APP/4. callNest/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png` → `public/assets/logo/callnest-mark.png`
 - Generate a **transparent-background** version of the logo (use the foreground PNG above — it already has transparency). Use this as the primary logo throughout the site.
 - Generate a **favicon set** (16, 32, 180-apple, 192, 512, `favicon.ico`) from the mark.
 - Generate an **OpenGraph image** (1200×630) at `public/assets/og.png` — logo + tagline on brand-coloured background.

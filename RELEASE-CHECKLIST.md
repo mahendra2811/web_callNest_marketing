@@ -2,7 +2,7 @@
 
 This repo's slice of the release procedure. The full checklist (build, sign,
 tag, push) lives in the Android repo at
-`/home/primathon/Documents/p_projet/a_APP/4. callVault/RELEASE-CHECKLIST.md`.
+`/home/primathon/Documents/p_projet/a_APP/4. callNest/RELEASE-CHECKLIST.md`.
 
 The web repo's job per release:
 
