@@ -11,6 +11,29 @@ export type Release = {
 
 export const RELEASES: Release[] = [
   {
+    version: "2.0.3",
+    date: "2026-07-20",
+    size: "17.4 MB",
+    sha256: "315cdc79724fb8fb30bf4a6c79d6ae49e5a4b0396b075dd9198a4d25860ed42d",
+    added: [
+      "Caller-ID name capture v1.1: new opt-in 'Capture names from call notifications' (Settings → Calls) reads the name Truecaller / the phone's dialer shows during a call and saves it for that number — the name then labels the number's entire call history. A delayed post-call re-check also catches names OEM dialers write into the call log only after a call ends.",
+      "Caller-name sources now have a trust order (notification > call-log name > carrier CNAP); a weaker source never overwrites a stronger one.",
+      "New 'Caller-name detection health' screen (Settings → Calls) shows what's blocking caller-name capture and fixes each in one tap — notification access, screening role, battery optimisation, and (on Xiaomi/Oppo/realme/vivo/OnePlus) autostart.",
+    ],
+    changed: [
+      "Calls list: unsaved calls now show a light-blue row background (missed stays red); caller-ID names learned once now appear on all calls from that number.",
+      "Statistics/Insights charts: date labels render as '20/07' with a small month so they never clip; Top callers shows saved or caller-ID names instead of bare numbers.",
+      "Call detail: all action buttons (including Save to contacts) stay on one line.",
+      "More page: Quick export row hidden for now.",
+      "Follow-ups/Bookmarks (and all empty states): center icon properly centered.",
+      "Calls page: 'Unsaved inquiries' section starts collapsed.",
+    ],
+    fixed: [
+      "Notification-based caller-name capture now reads the name from Android 12+ call notifications correctly (it lives in a 'Person' field, not the title), so many more calls that show a name on screen now save that name. Also reads call notifications from any app, covers more OEM caller-ID components, and no longer drops valid business names.",
+    ],
+    downloadUrl: "/apk/callnest-latest.apk",
+  },
+  {
     version: "2.0.0",
     date: "2026-07-13",
     size: "17.4 MB",
