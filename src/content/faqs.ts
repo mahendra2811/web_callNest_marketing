@@ -50,7 +50,7 @@ export const FAQS_EXTRA: FAQ[] = [
   },
   {
     q: "How do I contact support?",
-    a: "Email support@pooniya.com or use the WhatsApp link on the Contact page. Bug reports have a dedicated form that pre-fills your device details.",
+    a: "Email mahendrapuniya92@gmail.com or use the WhatsApp link on the Contact page. Bug reports have a dedicated form that pre-fills your device details.",
   },
 ];
 

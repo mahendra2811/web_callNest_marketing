@@ -9,6 +9,7 @@ const PATHS = [
   "/features/",
   "/changelog/",
   "/privacy/",
+  "/delete-account/",
   "/terms/",
   "/permissions/",
   "/bug-report/",

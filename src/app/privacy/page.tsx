@@ -16,8 +16,10 @@ export default function PrivacyPage() {
         Privacy
       </h1>
       <p className="mt-2 text-ink-600">
-        Last updated: 8 May 2026 · Effective: 8 May 2026. Aligned with India&apos;s
-        Digital Personal Data Protection Act, 2023.
+        Last updated: 22 July 2026 · Effective: 22 July 2026. Aligned with
+        India&apos;s Digital Personal Data Protection Act, 2023. Applies to
+        callNest however you install it — from Google Play or from this
+        website.
       </p>
 
       <div className="mt-6 rounded-2xl border border-brand-500/20 bg-brand-500/5 p-4 text-sm text-ink-900">
@@ -40,13 +42,18 @@ export default function PrivacyPage() {
               when you enable auto-save into a callNest contact group.
             </li>
             <li>
-              <strong>Notes, tags, follow-ups, lead scores</strong> — stored in
-              an encrypted on-device database.
+              <strong>Caller names</strong> — detected during calls from your
+              carrier&apos;s caller-ID (CNAP) and your phone&apos;s own call
+              log, matched and stored on-device only.
             </li>
             <li>
-              <strong>Backups</strong> — if enabled, an encrypted snapshot is
-              uploaded to your own Google Drive&apos;s app folder. We have no
-              access to it.
+              <strong>Notes, tags, follow-ups, lead scores</strong> — stored in
+              an on-device database that never leaves your phone.
+            </li>
+            <li>
+              <strong>Backups</strong> — written to your phone&apos;s storage,
+              encrypted with a passphrase only you know. We have no access to
+              them.
             </li>
           </ul>
         </Block>
@@ -69,11 +76,6 @@ export default function PrivacyPage() {
               (PostHog) are sent. Phone numbers, contacts, notes, and call
               content are never sent.
             </li>
-            <li>
-              <strong>AI features (BYOK)</strong> — when you use AI features
-              (e.g. weekly digest), the relevant text is sent directly from
-              your phone to Anthropic with your own API key. We never see it.
-            </li>
           </ul>
         </Block>
 
@@ -83,8 +85,13 @@ export default function PrivacyPage() {
             <li>We do not sell or rent your data.</li>
             <li>We do not upload your call log, contacts or notes.</li>
             <li>
+              We do not read your SMS, photos, or other apps&apos;
+              notifications.
+            </li>
+            <li>
               We do not run ads or third-party trackers beyond the opt-in
-              analytics named above.
+              analytics named above. The app contains no advertising SDK and
+              does not collect the Android Advertising ID.
             </li>
           </ul>
         </Block>
@@ -114,7 +121,12 @@ export default function PrivacyPage() {
             </li>
             <li>
               <strong>Correction & deletion</strong> — edit or delete any record
-              on-device. Account deletion via the email below.
+              on-device. Delete your account in the app (Account → Delete
+              account) or follow the steps on{" "}
+              <a className="text-brand-500 underline" href="/delete-account/">
+                /delete-account
+              </a>
+              .
             </li>
             <li>
               <strong>Withdraw consent</strong> — turn off &ldquo;Help improve
@@ -128,10 +140,10 @@ export default function PrivacyPage() {
         </Block>
 
         <Block title="7. Security">
-          On-device data is in an encrypted Room database. Sensitive secrets
-          (e.g. your Anthropic API key) use{" "}
-          <code>EncryptedSharedPreferences</code> (Android Keystore-backed
-          AES-256-GCM). Network traffic uses TLS 1.2+.
+          On-device data is stored in the app&apos;s private storage,
+          protected by Android&apos;s file-based encryption. Backup archives
+          are AES-encrypted with your passphrase. Network traffic uses
+          TLS 1.2+.
         </Block>
 
         <Block title="8. Website analytics">
