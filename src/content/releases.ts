@@ -35,9 +35,9 @@ export const RELEASES: Release[] = [
   },
   {
     version: "2.0.0",
-    date: "2026-07-13",
-    size: "17.4 MB",
-    sha256: "3b3acb1704243fc3292a3c487dbca8d1af0e76c003caf0c19079027a12d586d4",
+    date: "2026-08-18",
+    size: "17.1 MB",
+    sha256: "90a6a6f7d9972764b3e196fd1684c304dd723d1635c714f6464cdce6680b9aa4",
     added: [
       "Premium UX surfaces (paywall, gate screen, badges, My Plan) — `PremiumBadge`, `PremiumLock`, `UpsellSheet`, `TrialBanner`, and `LimitMeter` components; a `premium/paywall` pricing screen (1/6/12-month plan cards, feature list, footer legal links, restore purchase) with a clearly-labeled **test-purchase stub** standing in for Razorpay checkout; a `premium/my_plan` screen (plan status, payment history placeholder, WhatsApp support link); and a 'callNest Premium' row on the More tab + a plan card on Account.",
       "Premium gates are now wired everywhere the spec calls for them — a hard paywall gate when a plan expires, trial locks on Export/Quick export/Auto-tag rules/Weekly digest AI/Cloud backup/CSV import, a trial countdown banner on Calls, and a '38 of 50 trial saves' meter + honest 'Save 12 of 18 (trial limit)' wording on Inquiries — but **everything stays fully off by default**: a new master switch (off) keeps every user on today's unlimited experience until it's explicitly turned on. A `BuildConfig.DEBUG`-only 'Premium debug' row in Settings lets testers flip the switch and simulate Trial/Active/Expired states without a real purchase.",
