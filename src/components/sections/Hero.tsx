@@ -1,5 +1,5 @@
 import { LinkButton } from "@/components/ui/Button";
-import { PhoneMockup } from "@/components/ui/PhoneMockup";
+import Image from "next/image";
 import { SITE } from "@/content/site";
 import { Download, ShieldCheck } from "lucide-react";
 
@@ -32,9 +32,14 @@ export function Hero() {
           </p>
         </div>
         <div className="relative">
-          <PhoneMockup
-            src="/assets/screenshots/screenshot-01.png"
-            alt="callNest inbox screenshot"
+          <Image
+            src="/assets/screenshots/real/callnest-more-hub-1080x1920.png"
+            alt="callNest app showing inquiry, follow-up and export tools"
+            width={1080}
+            height={1920}
+            sizes="(min-width: 768px) 300px, 70vw"
+            priority
+            className="mx-auto h-auto w-full max-w-[280px] rounded-3xl shadow-neu dark:shadow-neu-dark"
           />
         </div>
       </div>
