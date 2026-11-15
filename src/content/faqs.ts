@@ -14,8 +14,12 @@ export const FAQS_HOME: FAQ[] = [
     a: "Open the Google Play listing, install the app, and follow the setup instructions.",
   },
   {
+    q: "Does callNest show calls from before installation?",
+    a: "No. The Google Play version starts capturing supported calls after setup. Incoming calls require the call-screening role; outgoing calls need to be started from callNest.",
+  },
+  {
     q: "Where is my data stored?",
-    a: "On your device, in an encrypted local database. Cloud backup is optional and off by default.",
+    a: "Call details and notes are stored on your device. Check the app for the backup options available to you.",
   },
   {
     q: "Do you record my calls?",
@@ -23,7 +27,7 @@ export const FAQS_HOME: FAQ[] = [
   },
   {
     q: "Will it slow down my phone?",
-    a: "No. callNest runs lightweight background work and is tuned for Xiaomi/Realme/Oppo battery managers.",
+    a: "callNest uses background work to support its features. Performance and battery use depend on your phone and settings.",
   },
 ];
 
@@ -34,7 +38,7 @@ export const FAQS_EXTRA: FAQ[] = [
   },
   {
     q: "My OEM kills background apps. Will callNest still work?",
-    a: "Yes, with one extra step. Whitelist callNest in your phone's battery saver and disable any auto-launch restrictions. We document this for Xiaomi, Realme and Oppo.",
+    a: "Battery settings can affect background capture. Check your phone’s battery and auto-launch settings if callNest is not working as expected.",
   },
   {
     q: "How do I export my leads?",
@@ -42,15 +46,15 @@ export const FAQS_EXTRA: FAQ[] = [
   },
   {
     q: "How do I delete all my data?",
-    a: "Settings, Data, Delete everything. This wipes the local database and any cloud backup tied to your account.",
+    a: "To remove local app data, use Settings → Reset all data or uninstall the app. See the account deletion page for account and backup details.",
   },
   {
     q: "I am switching phones. How do I move my data?",
-    a: "Turn on cloud backup on the old phone. Install callNest on the new phone, sign in, restore. Or export to CSV and import on the new device.",
+    a: "Check Backup & Restore in the app for available options. Keep any exported backup safe and follow the restore instructions on your new phone.",
   },
   {
     q: "How do I contact support?",
-    a: "Email mahendrapuniya92@gmail.com or use the WhatsApp link on the Contact page. Bug reports have a dedicated form that pre-fills your device details.",
+    a: "Email mahendrapuniya92@gmail.com or use the bug report form on this website.",
   },
 ];
 

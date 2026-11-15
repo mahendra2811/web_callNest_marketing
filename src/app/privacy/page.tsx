@@ -18,12 +18,11 @@ export default function PrivacyPage() {
       <p className="mt-2 text-ink-600">
         Last updated: 22 July 2026 · Effective: 22 July 2026. Aligned with
         India&apos;s Digital Personal Data Protection Act, 2023. Applies to
-        callNest however you install it — from Google Play or from this
-        website.
+        the Google Play version of callNest.
       </p>
 
       <div className="mt-6 rounded-2xl border border-brand-500/20 bg-brand-500/5 p-4 text-sm text-ink-900">
-        <strong>Short version.</strong> Most of your data — call log,
+        <strong>Short version.</strong> Most of your data — captured call details,
         contacts, notes, tags — never leaves your phone. The only things that
         go off-device are: your email (sign-in), an opt-in anonymised crash
         and analytics signal, and a push token for reminders. You can turn
@@ -34,8 +33,7 @@ export default function PrivacyPage() {
         <Block title="1. Data we process on your device">
           <ul className="list-disc space-y-1 pl-5 text-ink-600">
             <li>
-              <strong>Call log</strong> — read locally to list, tag, and score
-              inquiry calls. Never uploaded.
+              <strong>Call details</strong> — supported calls are captured after setup to list, tag, and score inquiries. The Google Play version does not read earlier system call history.
             </li>
             <li>
               <strong>Contacts</strong> — read to match callers; written only
@@ -43,8 +41,7 @@ export default function PrivacyPage() {
             </li>
             <li>
               <strong>Caller names</strong> — detected during calls from your
-              carrier&apos;s caller-ID (CNAP) and your phone&apos;s own call
-              log, matched and stored on-device only.
+              carrier&apos;s caller-ID (CNAP) where available, matched and stored on-device only.
             </li>
             <li>
               <strong>Notes, tags, follow-ups, lead scores</strong> — stored in

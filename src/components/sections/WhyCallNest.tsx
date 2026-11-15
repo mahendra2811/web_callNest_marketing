@@ -5,12 +5,12 @@ const ITEMS = [
   {
     Icon: ShieldCheck,
     title: "Local-first, private by default",
-    body: "Your data stays on your device. Cloud backup is opt-in and encrypted.",
+    body: "Call details and notes are stored on your device.",
   },
   {
     Icon: Zap,
     title: "Built for Indian phones",
-    body: "Survives Xiaomi, Realme and Oppo battery managers without tricks.",
+    body: "Designed for Android phones used by busy business owners.",
   },
   {
     Icon: Smartphone,

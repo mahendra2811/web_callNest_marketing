@@ -10,7 +10,7 @@ const STEPS = [
   {
     Icon: Phone,
     title: "Take calls like always",
-    body: "Set up callNest to help you keep track of your business inquiries.",
+    body: "After setup, callNest starts capturing supported calls. Earlier calls are not imported.",
   },
   {
     Icon: ListChecks,

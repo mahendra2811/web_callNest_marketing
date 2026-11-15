@@ -9,7 +9,7 @@ export function FeaturesGrid({ compact = false }: { compact?: boolean }) {
         Everything a busy shop owner needs
       </h2>
       <p className="mt-2 text-ink-600">
-        Sixteen features grouped under Capture, Organize, Act and Protect.
+        Tools for capturing supported calls, organizing inquiries and following up.
       </p>
       <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {FEATURES.map((f) => (

@@ -20,7 +20,7 @@ export default function FeaturesPage() {
           Features
         </h1>
         <p className="mt-2 max-w-2xl text-ink-600">
-          Sixteen features built around four jobs: Capture every call,
+          Tools built around four jobs: Capture supported calls,
           Organize the pipeline, Act on the right leads, and Protect customer
           data.
         </p>

@@ -1,9 +1,9 @@
 export const SITE = {
   name: "callNest",
   url: "https://callnest.pooniya.com",
-  tagline: "Every call is a lead. Don't lose one.",
+  tagline: "Keep customer inquiries in view.",
   description:
-    "Auto-save, tag, score and follow-up every inquiry call your business gets.",
+    "Organize supported business calls, add notes and remember follow-ups on Android.",
   currentVersion: "1.0.0",
   minAndroid: "8.0",
   playStoreUrl: "https://play.google.com/store/apps/details?id=com.pooniya.callnest",

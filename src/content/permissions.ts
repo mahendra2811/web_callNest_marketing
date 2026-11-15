@@ -6,9 +6,9 @@ export type Permission = {
 
 export const PERMISSIONS: Permission[] = [
   {
-    key: "READ_CALL_LOG",
-    why: "Read incoming, outgoing and missed calls so we can build your lead pipeline.",
-    dont: "We never read SMS, app usage or anything outside the call log.",
+    key: "Call screening role",
+    why: "Identify supported incoming calls as they happen after setup.",
+    dont: "The Google Play version does not request access to your system call log or import earlier calls.",
   },
   {
     key: "READ_CONTACTS",
@@ -33,7 +33,7 @@ export const PERMISSIONS: Permission[] = [
   {
     key: "FOREGROUND_SERVICE",
     why: "Keep the call watcher alive so calls are captured even when the app is closed.",
-    dont: "The service does only call-log work. It does not track location.",
+    dont: "The service supports call-related features. It does not track location.",
   },
   {
     key: "Battery exemption",

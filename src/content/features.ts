@@ -17,7 +17,7 @@ export const FEATURES: Feature[] = [
     title: "Keep track of inquiries",
     short:
       "Capture supported calls and organize your business inquiries.",
-    long: "Once set up, callNest captures supported calls as they happen. Availability depends on your phone and the permissions you grant.",
+    long: "The Play version captures supported calls after setup; it does not import earlier call history. Incoming calls require the call-screening role, and outgoing calls must be started in callNest.",
   },
   {
     id: "auto-save",
@@ -89,8 +89,8 @@ export const FEATURES: Feature[] = [
     group: "Act",
     icon: "ListChecks",
     title: "Bulk actions",
-    short: "Tag, export, or follow-up dozens of calls at once.",
-    long: "Select many calls and act in one go. Great for clearing a Monday backlog or tagging an entire campaign.",
+    short: "Manage selected calls together.",
+    long: "Select multiple calls to manage your call list.",
   },
   {
     id: "app-lock",
@@ -105,16 +105,16 @@ export const FEATURES: Feature[] = [
     group: "Protect",
     icon: "Database",
     title: "Local-first storage",
-    short: "Your data lives on your device. No mandatory cloud account.",
-    long: "Everything is stored in an encrypted local database on your phone. You can use the full app without ever signing in.",
+    short: "Keep call details and notes on your device.",
+    long: "Your call details and notes are stored on your phone.",
   },
   {
     id: "cloud-backup",
     group: "Protect",
     icon: "CloudUpload",
     title: "Optional cloud backup",
-    short: "Encrypted, opt-in, sign in with phone or email.",
-    long: "Turn it on only if you want it. Backups are encrypted, restorable on a new phone, and you can wipe them any time.",
+    short: "Backup options depend on your app configuration.",
+    long: "Check the backup settings in the app for the options available to you.",
   },
   {
     id: "self-update",
@@ -139,6 +139,6 @@ export const FEATURES: Feature[] = [
     title: "Battery-friendly",
     short:
       "Designed to survive Xiaomi / Realme / Oppo battery managers.",
-    long: "callNest uses a tuned foreground service and the right Android exemptions so aggressive battery savers do not silently kill it.",
+    long: "Background behavior depends on your phone and battery settings.",
   },
 ];
