@@ -6,7 +6,7 @@ export const SITE = {
     "Auto-save, tag, score and follow-up every inquiry call your business gets.",
   currentVersion: "1.0.0",
   minAndroid: "8.0",
-  apkPath: "/apk/callnest-latest.apk",
+  playStoreUrl: "https://play.google.com/store/apps/details?id=com.pooniya.callnest",
   emails: {
     support: "mahendrapuniya92@gmail.com",
     bugs: "mahendrapuniya92@gmail.com",

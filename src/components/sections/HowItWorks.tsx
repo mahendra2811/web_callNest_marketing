@@ -4,13 +4,13 @@ import { Download, Phone, ListChecks } from "lucide-react";
 const STEPS = [
   {
     Icon: Download,
-    title: "Install in 60 seconds",
-    body: "Download the signed APK, allow install from this source, done.",
+    title: "Install from Google Play",
+    body: "Find callNest on Google Play and follow the setup instructions.",
   },
   {
     Icon: Phone,
     title: "Take calls like always",
-    body: "callNest captures every call in the background. No new habits.",
+    body: "Set up callNest to help you keep track of your business inquiries.",
   },
   {
     Icon: ListChecks,

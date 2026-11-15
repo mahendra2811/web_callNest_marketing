@@ -16,19 +16,19 @@ export function Hero() {
             {SITE.tagline}
           </h1>
           <p className="mt-4 max-w-xl text-base text-ink-600 sm:text-lg">
-            callNest auto-saves every inquiry call, scores your hottest leads
-            and keeps a clean follow-up pipeline on your Android phone.
+            Organize business inquiries, add notes, score leads and keep track
+            of follow-ups on your Android phone.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <LinkButton href="/download/" variant="primary">
-              <Download className="h-4 w-4" /> Download APK
+            <LinkButton href={SITE.playStoreUrl} variant="primary">
+              <Download className="h-4 w-4" /> Get it on Google Play
             </LinkButton>
             <LinkButton href="/features/" variant="secondary">
               See features
             </LinkButton>
           </div>
           <p className="mt-3 text-xs text-ink-600">
-            Android {SITE.minAndroid}+ · Sideload only · Free, no ads
+            Android {SITE.minAndroid}+
           </p>
         </div>
         <div className="relative">

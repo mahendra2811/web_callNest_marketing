@@ -14,10 +14,10 @@ export const FEATURES: Feature[] = [
     id: "auto-capture",
     group: "Capture",
     icon: "PhoneIncoming",
-    title: "Auto-capture every call",
+    title: "Keep track of inquiries",
     short:
-      "Reads your call log and saves every inquiry, even the ones you missed.",
-    long: "callNest watches the call log in the background. Every incoming, outgoing and missed call gets imported into your lead pipeline automatically. Nothing slips through, even when the shop is busy.",
+      "Capture supported calls and organize your business inquiries.",
+    long: "Once set up, callNest captures supported calls as they happen. Availability depends on your phone and the permissions you grant.",
   },
   {
     id: "auto-save",
@@ -121,8 +121,8 @@ export const FEATURES: Feature[] = [
     group: "Capture",
     icon: "RefreshCcw",
     title: "Self-update",
-    short: "App checks for new versions and updates itself. No Play Store needed.",
-    long: "callNest pings the update server, downloads the new signed APK and installs it with your permission. You always run the latest build.",
+    short: "Keep callNest up to date through Google Play.",
+    long: "Check Google Play for available updates to callNest.",
   },
   {
     id: "bilingual",

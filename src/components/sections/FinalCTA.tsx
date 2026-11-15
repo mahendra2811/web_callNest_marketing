@@ -1,6 +1,7 @@
 import { Section } from "@/components/ui/Section";
 import { LinkButton } from "@/components/ui/Button";
 import { Download } from "lucide-react";
+import { SITE } from "@/content/site";
 
 export function FinalCTA() {
   return (
@@ -15,11 +16,11 @@ export function FinalCTA() {
         </p>
         <div className="mt-6">
           <LinkButton
-            href="/download/"
+            href={SITE.playStoreUrl}
             variant="secondary"
             className="text-ink-900"
           >
-            <Download className="h-4 w-4" /> Download the APK
+            <Download className="h-4 w-4" /> Get it on Google Play
           </LinkButton>
         </div>
       </div>

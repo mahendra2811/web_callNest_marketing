@@ -18,13 +18,12 @@ export default function TermsPage() {
 
       <div className="mt-8 space-y-6 text-sm">
         <Block title="As-is software">
-          callNest is a sideloaded Android app provided as-is. We do our best
+          callNest is an Android app provided as-is. We do our best
           to make it reliable, but we cannot guarantee uninterrupted service
           on every device or Android version.
         </Block>
         <Block title="No call recording">
-          callNest does not record calls. It only reads call-log metadata that
-          Android already stores on your device.
+          callNest does not record call audio.
         </Block>
         <Block title="Your responsibility">
           You are responsible for the data you store, the contacts you tag and

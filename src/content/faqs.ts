@@ -6,12 +6,12 @@ export const FAQS_HOME: FAQ[] = [
     a: "Yes. No subscription, no ads, no in-app purchases.",
   },
   {
-    q: "Why isn't it on the Play Store?",
-    a: "Reading the call log requires permissions Play Store restricts for non-default-dialer apps. callNest is distributed directly so it can do its job.",
+    q: "Where can I get callNest?",
+    a: "Find callNest on Google Play using the link on this website.",
   },
   {
-    q: "Is it safe to install?",
-    a: "Yes. The APK is signed. SHA-256 checksum is published on the download page. Verify it before installing.",
+    q: "How do I install callNest?",
+    a: "Open the Google Play listing, install the app, and follow the setup instructions.",
   },
   {
     q: "Where is my data stored?",
@@ -19,7 +19,7 @@ export const FAQS_HOME: FAQ[] = [
   },
   {
     q: "Do you record my calls?",
-    a: "No. callNest never records audio. It only reads the call-log metadata Android already stores.",
+    a: "No. callNest does not record call audio.",
   },
   {
     q: "Will it slow down my phone?",
@@ -30,7 +30,7 @@ export const FAQS_HOME: FAQ[] = [
 export const FAQS_EXTRA: FAQ[] = [
   {
     q: "Which permissions does callNest ask for?",
-    a: "Call log, contacts, notifications, draw-over-other-apps and a battery exemption. Each one is explained on the Permissions page with what we do and do not do.",
+    a: "Permissions depend on your Android version and how the app is configured. The app explains its requests during setup.",
   },
   {
     q: "My OEM kills background apps. Will callNest still work?",
