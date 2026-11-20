@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowDown, ArrowRight, BarChart3, BellRing, Check, ContactRound, Download, FileSpreadsheet, MessageCircle, PhoneIncoming, ShieldCheck, Sparkles, Tags } from "lucide-react";
+import { ArrowDown, ArrowRight, BarChart3, BellRing, Check, ContactRound, Download, FileSpreadsheet, MessageCircle, PhoneIncoming, ShieldCheck, Sparkles, Tags, FlaskConical } from "lucide-react";
 import { AppTour } from "@/components/home/AppTour";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { SITE } from "@/content/site";
@@ -51,6 +51,7 @@ export default function HomePage() {
       <p className="cn-disclaimer">Call capture and caller names depend on setup, permissions and your device. The Play version starts with supported calls after setup.</p>
     </section>
 
+    <section className="cn-beta-promo-wrap cn-wrap" aria-labelledby="beta-promo-title"><div className="cn-beta-promo"><div className="cn-beta-brand"><div className="cn-beta-logo"><Image src="/assets/logo/callnest-mark.png" alt="" width={72} height={72} /><span>BETA</span></div><div><p className="cn-beta-kicker"><Sparkles size={15} /> TRY THE NEXT VERSION</p><h2 id="beta-promo-title">Meet <em>CallNest Beta.</em></h2><p>Try upcoming tools and improvements in a separate app, while keeping your Play version installed.</p></div></div><div className="cn-beta-promo-action"><a className="cn-button cn-button-dark" href="/beta/">Explore Beta <ArrowRight size={17} /></a><small>Separate install · Separate app data</small></div></div></section>
     <section className="cn-tour-section" id="app-tour"><div className="cn-wrap"><div className="cn-section-heading"><div><p className="cn-label"><span className="cn-label-dot" /> A CLOSER LOOK</p><h2>Made for real life.<br /><em>Not extra work.</em></h2></div><p>A simple home for your customer conversations. Tap through to see callNest in action.</p></div><AppTour /><p className="cn-disclaimer">Screens and available features may vary by device and app version.</p></div></section>
 
     <section className="cn-section cn-wrap" id="how-it-works"><div className="cn-section-heading"><div><p className="cn-label"><span className="cn-label-dot" /> GETTING STARTED</p><h2>Ready in <em>three steps.</em></h2></div><p>Get set up, then let callNest help you keep your inquiries organized.</p></div><div className="cn-steps"><article><span>01</span><h3>Get the app</h3><p>Find callNest on Google Play and install it on your Android phone.</p></article><article><span>02</span><h3>Set it up</h3><p>Follow the setup steps and allow the permissions needed for the features you choose.</p></article><article><span>03</span><h3>Stay organized</h3><p>Save supported new inquiries, add details and plan your follow-ups.</p></article></div></section>

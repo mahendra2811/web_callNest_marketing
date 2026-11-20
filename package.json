@@ -9,7 +9,8 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "sync-release": "node scripts/sync-release.mjs",
-    "release": "npm run sync-release && npm run build"
+    "release": "npm run sync-release && npm run build",
+    "sync-beta": "node scripts/sync-beta.mjs"
   },
   "dependencies": {
     "next": "^15.0.3",

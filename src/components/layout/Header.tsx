@@ -10,6 +10,7 @@ const nav = [
   { href: "/#app-tour", label: "App tour" },
   { href: "/#how-it-works", label: "How it works" },
   { href: "/#faq", label: "FAQ" },
+  { href: "/beta/", label: "Beta" },
 ];
 
 export function Header() {

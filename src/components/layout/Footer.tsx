@@ -11,6 +11,8 @@ export function Footer() {
           <a href={`mailto:${SITE.emails.support}`} className="hover:text-ink-900">Contact</a>
           <Link href="/permissions/" className="hover:text-ink-900">Permissions</Link>
           <Link href="/privacy/" className="hover:text-ink-900">Privacy</Link>
+          <Link href="/beta/" className="hover:text-ink-900">CallNest Beta</Link>
+          <Link href="/beta/privacy/" className="hover:text-ink-900">Beta privacy</Link>
           <Link href="/terms/" className="hover:text-ink-900">Terms</Link>
           <Link href="/delete-account/" className="hover:text-ink-900">Delete account</Link>
         </nav>

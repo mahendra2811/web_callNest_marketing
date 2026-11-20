@@ -6,6 +6,8 @@ export const dynamic = "force-static";
 const PATHS = [
   "/",
   "/download/",
+  "/beta/",
+  "/beta/privacy/",
   "/features/",
   "/changelog/",
   "/privacy/",
